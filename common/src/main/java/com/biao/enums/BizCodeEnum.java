@@ -93,10 +93,10 @@ public enum BizCodeEnum {
     FILE_UPLOAD_USER_IMG_FAIL(700101, "用户头像文件上传失败");
 
     @Getter
-    private String message;
+    private final String message;
 
     @Getter
-    private int code;
+    private final int code;
 
     private BizCodeEnum(int code, String message) {
         this.code = code;
